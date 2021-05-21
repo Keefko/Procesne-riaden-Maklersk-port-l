@@ -221,7 +221,7 @@ export class MainPageComponent implements OnInit {
   }
 
   onSubmit() {
-    window.scroll({top: 1250});
+    Window.scroll({top: 1250});
     const data = this.form.getRawValue();
     this.filters = this.properties
     this.filter(data)
