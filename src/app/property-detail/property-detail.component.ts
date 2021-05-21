@@ -22,7 +22,8 @@ export class PropertyDetailComponent implements OnInit, OnDestroy {
   counterTask: number = 0;
   sink = new SubSink();
   numbers: number[] = [];
-
+  metersquared: number;
+  form: FormGroup;
   constructor(private formBuilder: FormBuilder,
               private route: ActivatedRoute,
               private propertyService: PropertyService,
@@ -37,6 +38,10 @@ export class PropertyDetailComponent implements OnInit, OnDestroy {
     }));
     this.loadData();
     this.loadSuggested();
+    this.form = this.formBuilder.group({
+      email: ''
+    });
+    this.metersquared = Number(this.getPrice() / this.getFloorArea());
   }
 
   ngOnDestroy(): void {
