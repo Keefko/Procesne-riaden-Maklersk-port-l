@@ -41,7 +41,7 @@ export class PropertyDetailComponent implements OnInit, OnDestroy {
     this.form = this.formBuilder.group({
       email: ''
     });
-    this.metersquared = Number(this.getPrice() / this.getFloorArea());
+    this.metersquared = (Number(this.getPrice()) / Number(this.getFloorArea()));
   }
 
   ngOnDestroy(): void {
