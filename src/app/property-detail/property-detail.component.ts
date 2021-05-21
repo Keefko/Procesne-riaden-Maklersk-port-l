@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {FormBuilder} from "@angular/forms";
+import {FormBuilder, FormGroup} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PropertyService} from "../services/property.service";
 import {TaskData} from "../interfaces/task-data.model";
@@ -41,6 +41,7 @@ export class PropertyDetailComponent implements OnInit, OnDestroy {
     this.form = this.formBuilder.group({
       email: ''
     });
+    this.metersquared = Number(this.getPrice() / this.getFloorArea());
   }
 
   ngOnDestroy(): void {
