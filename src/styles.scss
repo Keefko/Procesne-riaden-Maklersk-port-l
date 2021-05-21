@@ -1,13 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-
 :root {
   --main: #0095DA ;
   --darkblue: #003974;
   --grey-color: #3e3d3d;
   --info-paragraph: #7f7e7e;
   --bg-light: #f5faff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *{
