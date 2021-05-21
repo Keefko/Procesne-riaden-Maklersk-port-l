@@ -5,6 +5,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
   templateUrl: './navbar.component.html'
 })
 export class NavbarComponent implements OnInit {
+  logo = 'assets/images/logo.png';
   constructor() {
   }
 
@@ -18,8 +19,10 @@ export class NavbarComponent implements OnInit {
     let element = document.querySelector('#navbar') as HTMLElement;
     if (window.pageYOffset > element.clientHeight) {
       element.classList.add('sticky');
+      this.logo = 'assets/images/logo-blue.png'
     } else {
       element.classList.remove('sticky');
+      this.logo = 'assets/images/logo.png';
     }
   }
 }
