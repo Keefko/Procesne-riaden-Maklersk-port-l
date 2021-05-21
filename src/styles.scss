@@ -96,11 +96,15 @@ body {
 }
 
 #navbar .navbar-brand{
-  background: url('assets/images/logo.png')
+  background: url('assets/images/logo.png');
+  height: 100%;
+  width: auto;
 }
 
 #navbar .navbar-brand.sticky{
-  background: url('assets/images/logo-blue.png')
+  background: url('assets/images/logo-blue.png');
+    height: 100%;
+  width: auto;
 }
 
 #navbar ul {
@@ -213,7 +217,9 @@ body {
   
   
  #navbar .navbar-brand{
-  background: url('assets/images/logo.png')
+  background: url('assets/images/logo.png');
+  height: 100%;
+  width: auto;
 }
   
 }
