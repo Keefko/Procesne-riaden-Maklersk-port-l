@@ -96,14 +96,11 @@ body {
 }
 
 #navbar .navbar-brand{
-  padding-left: 2rem;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.6s;
+  background: url('assets/images/logo.png')
+}
+
+#navbar .navbar-brand.sticky{
+  background: url('assets/images/logo-blue.png')
 }
 
 #navbar ul {
@@ -213,6 +210,12 @@ body {
 #navbar ul > li a:hover {
   border: 1px solid darkgray;
 }
+  
+  
+ #navbar .navbar-brand{
+  background: url('assets/images/logo.png')
+}
+  
 }
 
 #navbar .dropdown ul li a {
